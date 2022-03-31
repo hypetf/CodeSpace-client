@@ -2,7 +2,7 @@
 
 ## About
 CodeSpace is a Team Project lead by a group of Manchester Metropolitan University students.<br/>
-This project aims to create a space for software developer to learn and improve any Java skills.<br/>
+This project aims to create a space for software developer to learn and improve any Java skills.
 <br/><br/>
 This is the client of the MERN Web Application.<br/>
 This project was created with Vite and developed in ReactJS.
@@ -13,7 +13,7 @@ This project was created with Vite and developed in ReactJS.
 ### Prerequisites
 To run this project locally, you will need to have NPM and NodeJS installed.<br/>
 NPM comes automatically with NodeJS.<br/>
-This project is developed on NodeJS v16.14.2.
+This project is developed on NodeJS v16.14.2.<br/>
 
 * [Download NodeJS](https://nodejs.org/en/download/)
 
@@ -27,12 +27,13 @@ This project is developed on NodeJS v16.14.2.
    ```sh
    npm run install
    ```
-3. Get the server running with:
+3. Get the client running with:
    ```sh
-   npm run dev
+   npm run client
    ```
+   <b>Make sure that server is alive before running client or proxing will fail.</b>
 
-Server will be live on:
+Client will be live on:
    ```sh
    http://localhost:3000/
    ```
