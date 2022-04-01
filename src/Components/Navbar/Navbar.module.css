@@ -1,0 +1,25 @@
+.Navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.btn_themeToggle {
+    background: var(--blueKey);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--defaultTransition);
+}
+
+.btn_themeToggle:hover {
+    background: var(--darkBlueKey);
+    color: #fff;
+}

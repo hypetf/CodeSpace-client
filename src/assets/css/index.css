@@ -1,0 +1,150 @@
+/* MONTSERRAT */
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+  /* font-weight: 200; */
+}
+
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url('../fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+  /* font-weight: 400; */
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+  /* font-weight: 600; */
+}
+
+@font-face {
+  font-family: Montserrat-Black;
+  src: url('../fonts/Montserrat/Montserrat-Black.ttf') format('truetype');
+  /* font-weight: 800; */
+}
+
+/* SEGOE UI */
+@font-face {
+  font-family: SegoeUI-Light;
+  src: url('../fonts/SegoeUI/SegoeUI-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: SegoeUI-Regular;
+  src: url('../fonts/SegoeUI/SegoeUI-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: SegoeUI-SemiBold;
+  src: url('../fonts/SegoeUI/SegoeUI-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: SegoeUI-Bold;
+  src: url('../fonts/SegoeUI/SegoeUI-Bold.ttf') format('truetype');
+}
+
+html, body {
+  height: 100%;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  font-family: SegoeUI-Regular;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* .title-semibold {
+  font-family: Montserrat-SemiBold;
+}
+
+.title-bold {
+  font-family: Montserrat-Bold;
+}
+
+.title-black {
+  font-family: Montserrat-Black;
+}
+
+.text-regular {
+  font-family: SegoeUI-Regular;
+}
+
+.text-semibold {
+  font-family: SegoeUI-SemiBold;
+}
+
+.text-bold {
+  font-family: SegoeUI-Bold;
+} */
+
+:root {
+  --dark-bg: #1a1a1a;
+  --light-bg: #fafafa;
+  --light-bg-img: url('../images/bg-light-blur.png');
+  --dark-bg-img: url('../images/bg-dark-blur.png');
+  --defaultTransition: .2s ease-out;
+  --slowTransition: .8s ease-out;
+  --blueKey: #2563eb;
+  --darkBlueKey: #1e40af;
+  --title-semibold: Montserrat-SemiBold;
+  --title-bold: Montserrat-Bold;
+  --title-black: Montserrat-Black;
+  --text-regular: SegoeUI-Regular;
+  --text-semibold: SegoeUI-SemiBold;
+  --text-bold: SegoeUI-Bold;
+}
+
+.App {
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.dark_theme_img {
+  background: var(--dark-bg-img);
+  transition: var(--slowTransition);
+}
+
+.light_theme_img {
+  background: var(--light-bg-img);
+  transition: var(--slowTransition);
+}
+
+.dark_theme {
+  background: var(--dark-bg);
+  transition: var(--defaultTransition);
+}
+
+.light_theme {
+  background: var(--light-bg);
+  transition: var(--defaultTransition);
+}
+
+h1 {
+  font-family: var(--title-bold);
+  font-size: 2.5rem;
+  color: var(--blueKey);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transition: var(--defaultTransition);
+}
+
+h2 {
+  font-family: var(--title-semibold);
+  font-size: 1.5rem;
+  color: var(--blueKey);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transition: var(--defaultTransition);
+}
