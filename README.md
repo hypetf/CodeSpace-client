@@ -31,7 +31,7 @@ This project is developed on NodeJS v16.14.2.<br/>
    ```sh
    npm run client
    ```
-   <b>Make sure that server is alive before running client or proxing will fail.</b>
+   > :warning: Make sure that server is alive before running client or proxing will fail.
 
 Client will be live on:
    ```sh
