@@ -22,7 +22,6 @@ function App() {
     //     console.log(err)
     //   });
 
-    // Get the current theme from localStorage and update theme State
     const themeStorage = localStorage.getItem('theme');
     if (!themeStorage) {
       localStorage.setItem('theme', 'light');
