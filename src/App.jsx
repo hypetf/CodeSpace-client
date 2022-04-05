@@ -50,7 +50,6 @@ function App() {
     <div className={`App ${theme ? theme + '_theme' : 'light_theme'}`}>
       <ThemeContext.Provider value={{ theme, themeToggle }}>
         <Router>
-          {/* <Navbar /> */}
           <Routes>
             <Route path="/" exact element={<Home />} />
             <Route path="/home" exact element={<Navigate replace to="/" />} />
