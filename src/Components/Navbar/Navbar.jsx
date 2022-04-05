@@ -9,7 +9,7 @@ function Navbar() {
             <button
                 className={styles.btn_themeToggle}
                 onClick={() => themeToggle()}
-            >Switch theme pasdpoiapodsa
+            >Switch theme
             </button>
         </div>
     );
