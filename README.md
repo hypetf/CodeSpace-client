@@ -25,7 +25,7 @@ This project is developed on NodeJS v16.14.2.<br/>
    ```
 2. Install all required npm packages by running:
    ```sh
-   npm run install
+   npm install
    ```
 3. Get the client running with:
    ```sh
