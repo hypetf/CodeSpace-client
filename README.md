@@ -21,7 +21,7 @@ NPM comes automatically with NodeJS.<br/>
 This project is developed on NodeJS v16.14.2.<br/>
 
 * [Download NodeJS](https://nodejs.org/en/download/)
-<!-- ihasiodaiodsa -->
+
 ### Setup
 
 1. Clone the repository inside your project folder.
