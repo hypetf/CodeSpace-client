@@ -36,7 +36,6 @@ function Navbar() {
             <NavItem icon={challenges_ico} label="Challenges" linkTo="/" />
             <NavItem icon={leaderboard_ico} label="Leaderboard" linkTo="/" />
             <NavItem icon={faq_ico} label="FAQ" linkTo="/" />
-            {/* <NavItem icon={sun_ico} themeBtn={true} /> */}
         </div>
         <div id={styles.nav_user_controls}>
             <button id={styles.nav_theme_btn} onClick={() => updateTheme()}>

@@ -1,3 +1,9 @@
+<center>
+   <img src="./src/assets/images/Logo.png" width=250/><br/><br/>
+   <a href="https://1gj229.sse.codesandbox.io/" target="_blank"><strong>View demo »</strong></a>
+</center>
+
+
 # CodeSpace
 1. <a href="#about">About section</a>
 2. <a href="#start">Getting started section</a>
@@ -55,7 +61,7 @@ Client will be live on:
 - [x] Setup client and routing
 - [x] Setup themes
 - [x] Setup light and dark mode
-- [ ] Complete Home Page
+- [x] Complete Home Page
 - [ ] Complete Login/Sign up Page
 - [ ] Complete Task Page
 
