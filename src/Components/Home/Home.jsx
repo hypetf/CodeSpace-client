@@ -1,13 +1,14 @@
-import React, { useContext, useEffect } from 'react';
-import styles from './Home.module.css';
-import Navbar from '../Navbar/Navbar';
-import Statistics from '../Statistics/Statistics';
-function Home() {
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
+import './Home.css';
+import '../../assets/css/main.css'
+import NotAuthBody from './HomeComponents/NotAuthBody';
+
+function Home() {
     return (
-        <div className={styles.Home}>
-            <Navbar />
-            <Statistics />
+        <div className='Home'>
+            <NotAuthBody />
         </div>
     );
 }

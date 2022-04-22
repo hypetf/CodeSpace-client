@@ -1,0 +1,44 @@
+.NavItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem .8rem;
+    outline: none;
+    text-decoration: none;
+    color: unset;
+    border-radius: var(--bradius5);
+    transition: var(--defaultTransition);
+    margin-right: 1rem;
+    font-family: SegoeUI-SemiBold;
+}
+
+.nav-links,
+.active {
+    background: var(--grey60);
+}
+
+.NavItem:hover {
+    background: var(--grey20);
+}
+
+.NavItem img {
+    height: 1.5rem;
+    width: auto;
+    margin-right: .5vw;
+}
+
+
+#nav_user_controls {
+    height: 90%;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+#noMargin {
+    margin-right: 0 !important;
+}

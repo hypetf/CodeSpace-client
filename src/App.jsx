@@ -1,66 +1,35 @@
-import React, { useEffect, useState } from 'react'
+// MODULES
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
-import axios from 'axios';
+import React, { useEffect, useState, lazy, Suspense } from 'react';
+import { ThemeController } from './Components/ThemeController/ThemeController';
+// COMPONENTS
 import Home from './Components/Home/Home';
+import NotFound from './Components/NotFound';
+import Navbar from './Components/Navbar/Navbar';
+import SignIn from './Components/Auth/SignIn';
 
-export const ThemeContext = React.createContext();
+// ASSETS
+// import './index.css';
+
+// EXPORTS
+export const UserContext = React.createContext();
 
 function App() {
-  const [theme, setTheme] = useState();
   useEffect(() => {
-    // axios({
-    //   method: 'GET',
-    //   url: '/api/v1/test',
-    //   headers: {
-    //     'Content-Type': 'application/json'
-    //   }
-    // })
-    //   .then(res => {
-    //     setData(res.data);
-    //   })
-    //   .catch(err => {
-    //     console.log(err)
-    //   });
-
-    // Get the current theme from localStorage and update theme State
-    const themeStorage = localStorage.getItem('theme');
-    if (!themeStorage) {
-      localStorage.setItem('theme', 'light');
-      setTheme('light');
-    }
-    else {
-      if (themeStorage === 'light')
-        setTheme('light');
-      else
-        setTheme('dark');
-    }
+    ThemeController.setTheme();
   }, []);
 
-  function themeToggle() {
-    if (theme === 'light') {
-      setTheme('dark');
-      localStorage.setItem('theme', 'dark');
-    }
-    else {
-      setTheme('light');
-      localStorage.setItem('theme', 'light');
-    }
-  }
-
   return (
-    <div className={`App ${theme ? theme + '_theme' : 'light_theme'}`}>
-      <ThemeContext.Provider value={{ theme, themeToggle }}>
-        <Router>
-          {/* <Navbar /> */}
-          <Routes>
-            <Route path="/" exact element={<Home />} />
-            <Route path="/home" exact element={<Navigate replace to="/" />} />
-            {/* <Route path="*" element={<NotFound />} /> */}
-          </Routes>
-        </Router>
-      </ThemeContext.Provider>
-    </div>
-  )
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/home" exact element={<Navigate replace to="/" />} />
+        <Route path="/signin" exact element={<SignIn />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
