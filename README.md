@@ -62,17 +62,19 @@ Client will be live on:
 - [x] Setup themes
 - [x] Setup light and dark mode
 - [x] Complete Home Page
-- [ ] Complete Login/Sign up Page
+- [x] Complete Login Page
+- [ ] Complete Sign up Page
 - [ ] Complete Task Page
 
 ### Backend
 - [x] Setup Server with Express
 - [x] Setup basic routes
 - [x] Setup REST API and a test route
-- [ ] Setup MongoDB Database
-- [ ] Setup Google oAuth
-- [ ] Setup GitHub oAuth
-- [ ] Setup Login/Sign Up with email and password
+- [x] Setup MongoDB Database
+- [x] Setup Google oAuth
+- [x] Setup GitHub oAuth
+- [ ] Setup Login with email and password
+- [ ] Setup Sign up with email and password
 
 ### Testing
 - [ ] Ensure consistency in design and themes
