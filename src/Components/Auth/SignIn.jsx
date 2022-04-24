@@ -19,7 +19,7 @@ function SignIn() {
         window.open(`${import.meta.env.VITE_API_DOMAIN_v1}/auth/google`, '_self');
     }
     const handleGithubLogin = () => {
-
+        window.open(`${import.meta.env.VITE_API_DOMAIN_v1}/auth/github`, '_self');
     }
 
     return (
