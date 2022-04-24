@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Navigate } from 'react-router-dom';
 import styles from './SignIn.module.css';
+import axios from 'axios';
 
 // Icons
 import arrowR_ico from '../../assets/images/icons/arrow-narrow-right.svg';
@@ -12,6 +14,14 @@ import circle_ico from '../../assets/images/icons/circle.svg';
 
 function SignIn() {
     const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+
+    const handleGoogleLogin = () => {
+        window.open(`${import.meta.env.VITE_API_DOMAIN_v1}/auth/google`, '_self');
+    }
+    const handleGithubLogin = () => {
+
+    }
+
     return (
         <div className={styles.SignIn}>
             <h1>Login to Your Account</h1>
@@ -40,11 +50,17 @@ function SignIn() {
                 </div>
                 <p id={styles.divider}>/</p>
                 <div id={styles.oAuthLogin}>
-                    <button id={styles.GoogleLogin}>
+                    <button
+                        id={styles.GoogleLogin}
+                        onClick={handleGoogleLogin}
+                    >
                         <img src={googleColored_ico} />
                         Sign in with Google
                     </button>
-                    <button id={styles.GithubLogin}>
+                    <button
+                        id={styles.GithubLogin}
+                        onClick={handleGithubLogin}
+                    >
                         <img src={github_ico} />
                         Sign in with GitHub
                     </button>

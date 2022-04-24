@@ -18,6 +18,7 @@
     height: 100%;
     margin-left: auto;
     font-family: SegoeUI-SemiBold;
+    border: none;
 }
 
 #nav_btn_login img {
