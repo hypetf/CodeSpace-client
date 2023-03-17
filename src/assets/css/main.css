@@ -1,0 +1,166 @@
+@font-face {
+    font-family: SegoeUI-Light;
+    src: url('../fonts/SegoeUI/segoeui_light.ttf') format('truetype');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: SegoeUI-SemiLight;
+    src: url('../fonts/SegoeUI/segoeui_semilight.ttf') format('truetype');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: SegoeUI-Regular;
+    src: url('../fonts/SegoeUI/segoeui_regular.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: SegoeUI-SemiBold;
+    src: url('../fonts/SegoeUI/segui-semibold.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: SegoeUI-Bold;
+    src: url('../fonts/SegoeUI/segoeui_bold.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url('../fonts/Montserrat/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src: url('../fonts/Montserrat/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url('../fonts/Montserrat/Montserrat-Bold.ttf');
+}
+
+:root {
+    --bg-dark-70: url('../images/bg-dark-70.png');
+    --bg-dark-95: url('../images/bg-dark-95.png');
+    --bg-light-50: url('../images/bg-light-50.png');
+    --dark60: #2e2e2e60;
+    --dark80: #2e2e2e80;
+    --dark100: #2e2e2e;
+    --boxDark80: #38383880;
+    --grey20: #b9b9b920;
+    --grey40: #b9b9b940;
+    --grey60: #b9b9b960;
+    --bradius5: 5px;
+    --bradius8: 8px;
+    --keyBlue: #005fb8;
+    --keyBlueHover: #004a90;
+    --keyDark: #202020;
+    --greenSuccess: #16a34a;
+    --defaultTransition: .35s ease-out;
+    --alertRed: #f04747;
+    --warningYellow: #ca8a04;
+    --muteGrey: #94a3b8;
+    --notificationBlue: #0369a1;
+}
+
+.darkMode {
+    background: var(--bg-dark-70);
+    background-size: cover;
+    background-attachment: fixed;
+    transition: var(--defaultTransition);
+
+}
+
+.lightMode {
+    background: var(--bg-light-50);
+    background-size: cover;
+    background-attachment: fixed;
+    transition: var(--defaultTransition);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    color: white;
+    letter-spacing: 1px;
+}
+
+* a {
+    color: unset !important;
+    text-decoration: none;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: SegoeUI-Regular;
+    /* min-width: 600px;
+    max-width: 600px; */
+}
+
+.NotFound {
+    height: 100vh;
+    width: 100%;
+    background: var(--bg-dark-95);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.Loader {
+    height: 100vh;
+    width: 100%;
+    background: var(--keyDark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Loader img {
+    width: 20%;
+    margin-bottom: 10vh;
+}
+
+.spinner {
+    border: .8rem solid #f3f3f3;
+    border-top: .8rem solid var(--keyDark);
+    border-bottom: .8rem solid var(--keyDark);
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .body-offline {
+        align-items: center;
+    }
+
+    .Navbar {
+        display: none;
+    }
+}

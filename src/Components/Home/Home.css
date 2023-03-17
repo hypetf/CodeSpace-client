@@ -1,0 +1,56 @@
+.Home {
+    height: 100vh;
+    width: 100%;
+    /* background: var(--bg-light-50);
+    background-size: cover;
+    background-attachment: fixed; */
+}
+
+.body-offline {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 3vw;
+}
+
+.body-offline h1 {
+    font-size: 5rem;
+}
+
+.body-offline p {
+    font-size: 1.5rem;
+    opacity: .8;
+    margin: 2vh 0;
+}
+
+#body-offline-buttons {
+    margin: 3vh 0;
+}
+
+#btn-join,
+#btn-resources {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+    border-radius: var(--bradius5);
+    transition: var(--defaultTransition);
+    font-family: SegoeUI-SemiBold;
+}
+
+#btn-join {
+    background: var(--keyBlue);
+}
+
+#btn-join:hover {
+    background: var(--keyBlueHover);
+}
+
+#btn-resources {
+    background: var(--dark100);
+}
+
+#btn-resources:hover {
+    background: var(--keyDark);
+}

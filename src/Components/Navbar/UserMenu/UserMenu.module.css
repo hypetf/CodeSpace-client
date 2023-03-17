@@ -1,0 +1,101 @@
+.UserMenu {
+    height: 100%;
+    width: auto;
+}
+
+#nav_btn_login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem .8rem;
+    outline: none;
+    text-decoration: none;
+    color: unset;
+    background: var(--keyBlue);
+    border-radius: var(--bradius5);
+    transition: var(--defaultTransition);
+    margin-right: 1rem;
+    height: 100%;
+    margin-left: auto;
+}
+
+#nav_btn_login:hover {
+    background: var(--keyBlueHover);
+}
+
+.btn_user_control {
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+    /* background: red; */
+    height: 100%;
+    
+}
+
+#avatar {
+    margin: 0;
+    z-index: 1;
+    border-radius: 50%;
+    height: 80%;
+    aspect-ratio: 1/1;
+    transition: var(--defaultTransition);
+}
+
+#avatar:hover {
+    box-shadow: 0 0 5px rgba(255, 255, 255, .4);
+}
+
+#user_control_dropdown {
+    height: auto;
+    min-width: 10vw;
+    width: auto;
+    position: absolute;
+    right: 1vw;
+    /* right: 0; */
+    margin-top: .5vh;
+    background: var(--dark100);
+    border-radius: var(--bradius8);
+    padding: .35rem;
+    box-shadow: 0 1em 1em -1em rgba(0, 0, 0, .85);
+}
+
+#dropdown_info h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+}
+
+#dropdown_info_badges {
+    margin: .5rem 0;
+    height: auto;
+    /* padding: .2rem 0 .5rem 0; */
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: .35rem;
+    border-bottom: 2px solid var(--grey20);
+}
+
+.dropdown_link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 2vh;
+    padding: 1rem 0;
+    border-radius: var(--bradius5);
+    background: transparent;
+    transition: var(--defaultTransition);
+    margin: .3rem 0;
+    cursor: pointer;
+}
+
+.dropdown_link:hover {
+    background: var(--grey20);
+}
+
+.dropdown_link img {
+    height: 2vh;
+    margin: 0 .5rem;
+}

@@ -1,0 +1,69 @@
+.Navbar {
+    height: 5rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .5rem 1.5rem;
+}
+
+.Navbar img {
+    height: 2rem;
+    cursor: pointer;
+    transition: var(--defaultTransition);
+}
+
+#navbar_logo:hover {
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, 1));
+}
+
+.nav_divider {
+    height: 90%;
+    width: 2px;
+    background: #b9b9b920;
+    margin: 0 1.5rem;
+}
+
+#nav_links {
+    height: auto;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+}
+
+#nav_user_controls {
+    height: 90%;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+#nav_theme_btn {
+    background: none;
+    height: 90%;
+    aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
+    outline: none;
+    border: none;
+    border-radius: var(--bradius5);
+    transition: var(--defaultTransition);
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+#nav_theme_btn img {
+    height: 1.5rem;
+    width: auto;
+}
+
+#nav_theme_btn:hover {
+    background: var(--grey20);
+}
